@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.ddmenu {
+    width: 70%;
+    margin:30px auto;
+}
+li{
+    list-style: none;
+}
+.ddmenuList {
+    display: flex;
+    justify-content: space-around;
+    padding:16px;
+    
+}
+.ddmenuList>li {
+    border-radius: 8px;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+   background-color: white;
+}
+
+.menuItems {
+    display: none;
+}
+
+.menuItems li {
+    background-color: red
+}
+.menuItems li:last-child {
+    border-radius:  0px 0px 8px 8px;
+}
+.menuItems li:hover {
+    background-color: crimson;
+}
+
+.visible{
+    display: block;
+}
+
+.ddmenuList .menuHeader:hover {
+    background-color: red ;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.ddmenuList>li:hover .menuItems {
+    display: block;
+}
+
+.ddmenuList>li:hover .menuItems1 {
+    perspective: 1000px;
+}
+
+.ddmenuList>li:hover .menuItems1 li:nth-child(1) {
+    opacity: 0;
+    animation: menu1 200ms ease-in-out forwards
+}
+
+@keyframes menu1 {
+    0% {
+      opacity: 0%;
+      transform: rotateY(-90deg) translateY(30px)
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px)
+    }
+}
+
+.ddmenuList>li:hover .menuItems1 li:nth-child(2) {
+    opacity: 0;
+    animation: menu1 400ms ease-in-out forwards
+}
+
+@keyframes menu1 {
+    0% {
+      opacity: 0%;
+      transform: rotateY(-90deg) translateY(30px)
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px)
+    }
+}
+
+.ddmenuList>li:hover .menuItems1 li:nth-child(3) {
+    opacity: 0;
+    animation: menu1 600ms ease-in-out forwards
+}
+
+@keyframes menu1 {
+    0% {
+      opacity: 0%;
+      transform: rotateY(-90deg) translateY(30px)
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px)
+    }
+}
+
+.ddmenuList>li:hover .menuItems1 li:nth-child(4) {
+    opacity: 0;
+    animation: menu1 800ms ease-in-out forwards
+}
+
+@keyframes menu1 {
+    0% {
+      opacity: 0%;
+      transform: rotateY(-90deg) translateY(30px)
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px)
+    }
+}
+
+.ddmenuList>li:hover .menuItems1 li:nth-child(5) {
+    opacity: 0;
+    animation: menu1 1000ms ease-in-out forwards
+}
+
+@keyframes menu1 {
+    0% {
+      opacity: 0%;
+      transform: rotateY(-90deg) translateY(30px)
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px)
+    }
+}
+
+.ddmenuList>li:hover .menuItems1 li:nth-child(6) {
+    opacity: 0;
+    animation: menu1 1200ms ease-in-out forwards
+}
+
+@keyframes menu1 {
+    0% {
+      opacity: 0%;
+      transform: rotateY(-90deg) translateY(30px)
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px)
+    }
+}
